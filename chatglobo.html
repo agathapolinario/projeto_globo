@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G1 Envie uma notícia — Flagrou algo?</title>
+    <link rel="stylesheet" href="chatglobo.css">
+    <link rel="shortcut icon" href="img aba servicos publicos/logo ge azul.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">G1</div>
+      <div>
+        <h1>Envie uma notícia / flagrante</h1>
+        <p class="lead">Tem algo acontecendo agora? Conte pra gente — pedimos só seu nome e cidade (ou bairro) para verificação.</p>
+      </div>
+    </header>
+
+    <main class="caixa_dados" role="main">
+      <form id="reportForm" action="#" method="post">
+        <div>
+          <label for="nome">Seu nome *</label>
+          <input id="nome" name="nome" type="text" placeholder="Ex: Maria Silva" required>
+        </div>
+
+        <div>
+          <label for="local">De onde você é? (cidade / bairro) *</label>
+          <input id="local" name="local" type="text" placeholder="Ex: São Paulo, Vila Mariana" required>
+        </div>
+
+        <div>
+          <label for="contato">E-mail ou telefone (opcional)</label>
+          <input id="contato" name="contato" type="text" placeholder="(opcional) exemplo@gmail.com ou (11) 9xxxx-xxxx">
+        </div>
+
+        <div>
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria">
+            <option value="">Selecione</option>
+            <option>Acidente</option>
+            <option>Crime</option>
+            <option>Conflito / Protesto</option>
+            <option>Evento</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="linha">
+          <label for="titulo">Título curto da notícia</label>
+          <input id="titulo" name="titulo" type="text" placeholder="Ex: Incêndio em prédio na Avenida X" required>
+        </div>
+
+        <div class="linha">
+          <label for="descricao">Descreva o que viu (local, horário, detalhes) *</label>
+          <textarea id="descricao" name="descricao" placeholder="Quanto mais detalhes (horário, placas, número etc.), melhor para checarmos." required></textarea>
+        </div>
+
+        <div class="linha">
+          <label for="imagem">Link de foto ou vídeo (opcional)</label>
+          <input id="imagem" name="imagem" type="text" placeholder="Cole aqui o link para foto ou vídeo (youtube, drive, icloud...)">
+        </div>
+
+        <div class="full small">
+          <input id="consent" name="consent" type="checkbox" required>
+          <label for="consent">&nbsp;Confirmo que as informações enviadas são verdadeiras ao meu conhecimento. Autorizo contato para verificação.</label>
+        </div>
+
+        <div class="actions full">
+          <div class="fontefinal">Ao enviar, nossa equipe pode entrar em contato para checagem.</div>
+          <div style="display:flex;gap:8px">
+            <button type="submit" class="btn">Enviar notícia</button>
+          </div>
+        </div>
+      </form>
+
+      <p class="fontefinal">
+        Dica: se puder, anexe um link com foto ou vídeo — facilita a checagem e acelera a publicação.
+      </p>
+    </main>
+  </div>
+
+</body>
+</html>
+    
+</body>
+</html>
